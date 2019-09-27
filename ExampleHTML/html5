@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title> HTML5 </title>
+      <meta charset="utf-8"/>
+    </head>
+    <body>
+      <header>
+        <h1> HTML5 Example </h1>
+      </header>
+      <nav>
+        <ul>
+          <li> <a href="http://www.google.com" target="_blank"> Google </a> </li>
+          <li> <a href="http://www.youtube.com" target="_blank"> YouTube </a> </li>
+          <li> <a href="http://www.wikipedia.org" target="_blank"> Wikipedia </a> </li>
+        </ul>
+      </nav>
+      <section>
+        <h2> Main Content </h2>
+      </section>
+      <aside>
+        <h3> Related Content </h3>
+      </aside>
+      <footer>
+        DAW AD-2019&Copy;
+      </footer>
+    </body>
+</html>
