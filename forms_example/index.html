@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Example</title>
+
+        <style media="screen">
+
+            .myForm{
+                border: 3px solid black;
+                color: blue;
+            }
+
+            #students-form{
+                color: purple;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <form class="myForm" id="students-form" action="process.php" method="get">
+
+            <input type="hidden" name="oculto" value="123" />
+            <label for="carrera"><strong>Carrera: </strong></label>
+            <select class="" name="carrera">
+                <option value="N/A"></option>
+
+                <optgroup label="Ingenierías">
+                    <option value="ISDR">Ingeniería en Sistemas Digitales y Robótica</option>
+                    <option value="ISC">Ingeniería en Sistemas Computacionales</option>
+                    <option value="IMT">Ingeniería en Mecatrónica</option>
+                </optgroup>
+                <optgroup label="Licenciatura">
+                    <option value="LAF">Licenciatura en Administración Financiera</option>
+                    <option value="LAE">Licenciatura en Administración de Empresas</option>
+                    <option value="LMC">Licenciatura en Mercadotecnia</option>
+                </optgroup>
+            </select>
+            <br/><br/>
+
+            <label for="matricula"><strong>Matrícula: </strong></label>
+            <input type="text" name="matricula" id="matricula" value=""
+                placeholder="A0012345" maxlength="9" required pattern="A0(\d{7})" />
+            <br/><br/>
+
+            <fieldset>
+
+                <legend>Datos Personales</legend>
+
+                <label for="nombre"><strong>Nombre: </strong></label>
+                <input type="text" name="nombre" id="nombre" value="" autofocus />
+                <br/><br/>
+                <label for="apellido"><strong>Apellido: </strong></label>
+                <input type="text" name="apellido" id="apellido" value="" />
+                <br/><br/>
+                <label for="edad"><strong>Edad: </strong></label>
+                <input type="number" name="edad" id="edad" value="" min="18" max="30" required />
+                <br/><br/>
+                <strong>Género:</strong>
+                <br/><br/>
+                <input type="radio" name="genero" value="M" id="masculino" /><label for="masculino">Masculino</label>
+                <br/>
+                <input type="radio" name="genero" value="F" id="femenino" checked /><label for="femenino">Femenino</label>
+
+            </fieldset>
+            <br/><br/>
+
+            <strong>Intereses:</strong>
+            <br/><br/>
+            <input type="checkbox" name="intereses" value="deportes" id="deportes" />
+            <label for="deportes">Deportes</label>
+            <input type="checkbox" name="intereses" value="musica" id="musica" />
+            <label for="musica">Música</label>
+            <input type="checkbox" name="intereses" value="libros" id="libros" checked />
+            <label for="libros">Libros</label>
+            <br/><br/>
+
+            <label for="comentarios"><strong>Comentarios: </strong></label><br/>
+            <textarea name="comentarios" rows="8" cols="30" placeholder="Escribe tus comentarios aquí..." disabled >Este es mi comentario</textarea>
+            <br/><br/>
+
+            <input type="submit" name="enviar" value="Enviar" />&nbsp;&nbsp;&nbsp;
+            <button type="reset" name="button">
+                <h1>Reset</h1>
+            </button>
+
+        </form>
+
+    </body>
+</html>

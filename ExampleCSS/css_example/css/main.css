@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Texas";
+    src: url("../fonts/texas_tango/texas_tango.otf");
+}
+
+h1{
+    color: #bf1128;
+    border: 15px solid yellow;
+    margin: 10px 5px 25px 0px;
+    font-family: chilanka;
+    font-size: 1em;
+}
+
+h1:hover{
+    border: 15px outset yellow;
+}
+
+h1 span{
+    color: #0f074a;
+    font-size: 100%;
+}
+
+h1 span.green{
+    color: green;
+}
+
+h1 a.test{
+    font-size: 10px;
+}
+
+#link_youtube{
+    font-size: 75px;
+    color: rgba(130,220,85,0.5);
+}
+
+h1 a:hover{
+    color: black;
+}
+
+p.text{
+    font-family: Texas;
+    border: 5px solid purple;
+}
+
+p.text:hover{
+    border-color: red green;
+}
+
+p .text{
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: katakana;
+    border: 3px solid brown;
+    color: white;
+    list-style-image: url("https://media.giphy.com/media/riqyFE7CTKzyU/giphy.gif");
+    background-image: url("https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/c0/3b/a6/c03ba6ec-48e3-1e1f-0bc8-15a0d7d9e332/source/256x256bb.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+ul li{
+    vertical-align: middle;
+}
+
+ol{
+    list-style-type: disc;
+    background-image: -webkit-linear-gradient(top, #ff0000, #ff7f00); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, #ff0000, #ff7f00); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, #ff0000, #ff7f00); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, #ff0000, #ff7f00); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to bottom, #ff0000, #ff7f00); /* Standard syntax; must be last */
+}

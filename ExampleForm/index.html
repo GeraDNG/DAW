@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Example Form</title>
+  </head>
+
+  <body>
+
+    <form class="" action="index.html" method="get">
+      <!-- Oculto: se manda al servidor pero no se muestra al usuario (ni lo modifica) -->
+      <input type="hidden" name="oculto" value="123">
+      <br />
+
+      <!-- Disable: no se manda al servidor -->
+      <label for="carrera"> <strong> Carrera: </strong> </label>
+      <input type="text" name="carrera" id="carrera" placeholder="ISDR" disabled/>
+      <br />
+
+      <!-- Entrada de texto -->
+      <label for="matricula"> <strong> Matrícula: </strong> </label>
+      <input type="text" name="matricula" id="matricula" value="A01209499" maxlength="9" required autofocus />
+      <br />
+      <label for="nombre"> <strong> Nombre: </strong> </label>
+      <input type="text" name="nombre" id="nombre" placeholder="Gerardo" />
+      <br />
+      <label for="apellido"> <strong> Apellido: </strong> </label>
+      <input type="text" name="apellido" id="apellido" placeholder="Naranjo" />
+      <br />
+
+      <!-- Selección -->
+      <strong> Género: </strong>
+      <br />
+      <input type="radio" name="genero" value="M" id="masculino" checked/> <label for="masculino"> Masculino </label>
+      <br />
+      <input type="radio" name="genero" value="F" id="femenino" /> <label for="femenino"> Femenino </label>
+      <br />
+
+      <!-- Botón -->
+      <input type="submit" name="enviar" value="Enviar" />
+      <br />
+
+    </form>
+
+  </body>
+
+</html>

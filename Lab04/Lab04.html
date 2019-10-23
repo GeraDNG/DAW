@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Landing Page" content="width=device-width, initial-scale=1.0" />
+      <!-- Define el ancho de la página para ajustarse al tamaño de la ventana del dispositivo -->
+    <link rel="stylesheet" type="text/css" href="Lab04.css" />
+      <!-- Sirve para indicar que la hoja de estilos a utilizar es el documento Lab03.css (en la misma carpeta) -->
+    <title>Sukito</title>
+
+    <style media="screen">
+      body {
+        background: rgba(0, 0, 0, 0.9);
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <div class="contenido">
+        <img src="logo.png" class="logo" alt="logo" />
+        <div class="titulo">
+          Bienvenido
+        </div>
+        <div class="texto">
+          Landing page para página de Sukito
+        </div>
+      </div>
+    </header>
+
+    <!-- Redes sociales -->
+    <section class="redes">
+      <div class="contenedor grid-3 centrado">
+        <div class="Instagram">
+          <!-- Se utilizan distintas divisiones con distintos nombres para poder aplicar formato en CSS más fácil -->
+          <a href="https://www.instagram.com/sukito_mx" target="_blank">
+            <!-- Sirve para agregar un link a la página de internet, al dar clic en la imagen siguiente: -->
+            <img src="Instagram.png" alt="Logo de Instagram" style="width:100px;height:100px;" />
+              <!-- Se define aquí mismo el tamaño de la imagen, ya que serán distintos tamaños para cada imagen -->
+          </a>
+          <h3>Instagram</h3>
+          <p>Instagram de Sukito</p>
+        </div>
+        <div class="YouTube">
+          <a href="https://www.youtube.com/channel/UCU9VoM46LzHT7E8L9fJyMiQ/videos" target="_blank">
+            <img src="Youtube.png" alt="Logo de YouTube" style="width:130px;height:100px;" />
+          </a>
+          <h3>YouTube</h3>
+          <p>YouTube de Sukito</p>
+        </div>
+        <div class="Suzuki">
+          <a href="https://www.suzuki.com.mx" target="_blank">
+            <img src="Suzuki.png" alt="Logo de Suzuki" style="width:150px;height:100px;" />
+          </a>
+          <h3>Página Oficial Suzuki</h3>
+          <p>Página Oficial de Suzuki México</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acerca de -->
+    <section class="informacion fondo-oscuro">
+      <div class="contenedor">
+        <div class="grid-2">
+          <div class="centrado">
+            <img src="info.png" alt="Acerca de" style="width:150px; height:150px;" />
+          </div>
+          <div class="info">
+            <h3>Acerca de Sukito:</h3>
+            <p>
+              Sukito es un Suzuki Swift 2018 Plata Sílice.
+              Las cuentas se crean con propósitos de entretenimiento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="centrado">
+      <!-- Sirve para agregar un pie de página -->
+      <p>Sukito MX &copy; 2019</p>
+        <!-- Se inserta un símbolo de copyright con "&copy;" -->
+    </footer>
+
+  </body>
+
+</html>

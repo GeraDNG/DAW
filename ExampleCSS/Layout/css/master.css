@@ -1,0 +1,60 @@
+.wrapper {
+  width: 80%;
+  margin: 0px auto;
+}
+
+#main-header {
+  padding: 20px 15px;
+  color: rgba( 88,  3,  0,1);
+}
+
+#main-header, nav li a {
+  text-align: center;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0;
+}
+
+nav li {
+  color: rgba(172, 60, 57,1);
+  display: inline-block;
+  padding: 10px 55px
+}
+
+nav li:hover {
+  color: rgba(125,  0,  0,1);
+  font-style: bold;
+  font-size: 110%;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+#main-content {
+  color: rgba( 88,  3,  0,1);
+  text-align: justify;
+}
+
+#main-content article {
+  display: inline-block;
+  width: 49%;
+}
+
+#main-content p {
+  padding: 0px 15;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: gray;
+  background-image: -webkit-linear-gradient(top, #003133, #67989a);
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}

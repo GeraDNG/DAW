@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Laboratorio 5: Web Forms</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    </head>
+
+    <body>
+
+      <form class="myForm" id="lab5-form" action="process_data_fancy.php" method="POST">
+
+        <br/>
+
+        <div class="numbers">
+          <label for="numbers"><strong>Numbers: </strong></label>
+          <input type="text" name="numbers" id="numbers" value=""
+                 placeholder="0,1,2,3,4,5,6,7,8,9... (no spaces)"
+                 required pattern="(\d|\d+,\d+)+" />
+          <br/><br/>
+        </div>
+
+        <fieldset>
+
+          <legend>About the numbers</legend>
+
+          <div class="sort_order">
+            <label for="sort_order"><strong>Sort order: </strong></label>
+            <select class="" name="sort_order">
+                <option value="N/A"></option>
+                <optgroup label="Value">
+                    <option value="Major">Major to minor</option>
+                    <option value="Minor">Minor to major</option>
+                </optgroup>
+            </select>
+            <br/><br/>
+          </div>
+
+          <div class="number_type">
+            <strong>Number type:</strong>
+            <br/>
+            <input type="radio" name="number_type" value="Pair" id="pair" checked /><label for="pair">Pair</label>
+            <br/>
+            <input type="radio" name="number_type" value="Odd" id="odd" /><label for="odd">Odd</label>
+            <br/><br/>
+          </div>
+
+          <div class="stats"
+            <strong>Stats:</strong>
+            <br/>
+            <input type="checkbox" name="stats[Average]" value="average" id="average" checked />
+            <label for="average">Average</label>
+            <input type="checkbox" name="stats[median]" value="median" id="median" />
+            <label for="median">Median</label>
+            <input type="checkbox" name="stats[Fashion]" value="fashion" id="fashion" />
+            <label for="fashion">Fashion</label>
+            <br/><br/>
+          </div>
+
+        </fieldset>
+        <br/><br/>
+
+        <div class="boton">
+          <input type="color" name="background_color" value="#ff0000">
+          <br/><br/>
+
+          <input type="submit" name="enviar" value="Enviar" />&nbsp;&nbsp;&nbsp;
+          <button type="reset" name="button">
+              <h1>Reset</h1>
+          </button>
+        </div>
+
+      </form>
+
+    </body>
+</html>
