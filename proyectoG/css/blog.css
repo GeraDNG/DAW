@@ -1,0 +1,30 @@
+#jitomates {
+  position: relative;
+  left: 65%;
+  width: 35%;
+  height: auto;
+  padding-bottom: 20%;
+  opacity: 0.5;
+}
+.inputs {
+  position: relative;
+  padding-top: 10%;
+  left: 5%;
+  font-size: 110%;
+}
+
+h2 {
+  position:absolute;
+  top: 120%;
+  left: 30%;
+  font-size: 200%;
+}
+
+#robot{
+  position: relative;
+  width: 40%;
+  height: auto;
+  padding: -55% 0%;
+  right: 42%;
+  opacity: 0.5;
+}
