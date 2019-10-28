@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Descripción técnica</title>
+    <link rel="stylesheet" href="./css/tecnica.css">
+  </head>
+
+  <body>
+    <header class="encabezado">
+<!--Logo, H1-->
+      <img src="./fotos/logo.png" alt="Logo de la empresa">
+      <a href="./index.html" style="text-decoration:none; color: black"> <h1> Spying Tomato </h1> </a>
+<!--Barra de links-->
+      <nav>
+        <ul>
+            <li class="menu"><a href="#"><strong>Páginas</strong></a>
+              <ul class="submenu">
+                <li><a href="./index.html"><strong>Promocionales</strong></a></li>
+                <li><a href="./panel.html"><strong>Panel de Control</strong></a></li>
+                <li><a href="./blog.html"><strong>Preguntomate!</strong></a></li>
+              </ul>
+            </li>
+        </ul>
+      </nav>
+      <div class="grid-2 wrapper">
+<!--Parrafo sobre vision-->
+        <div class="vision">
+            <article class="wrapper justificado">
+              <h2>Visión</h2>
+              <p>
+                El sistema de visión se llevó a cabo usando ROS y una cámara web. La
+                programación emplea un algoritmo de detección de círculos con
+                discriminación de color para identificar únicamente ciertos tonos de
+                rojo, según el tono deseado de madurez.
+                <br /> <br />
+                Además, el sistema de visión tiene la capacidad de contar el número
+                de jitomates que ya están listos para ser cosechados, esto gracias
+                al detector de forma y color con el que se implementó desde el
+                algoritmo, de esta forma, siempre se sabrá con certeza la cantidad
+                de producto listo para comercializarse.
+              </p>
+            </article>
+            <section class="fotoVision centrado">
+              <img src="./fotos/vision.PNG" alt="fotoVision" style="width:448px;height:389px;"/>
+            </section>
+        </div>
+<!--Parrafo sobre lidar-->
+        <div class="lidar">
+            <article class=" wrapper justificado">
+              <h2>Posicionamiento</h2>
+              <p>
+                El sistema de posicionamiento se llevó a cabo utilizando un Lidar.
+                El Lidar es un dispositivo que detecta todo lo que está a su
+                alrededor en un determinado rango y de manera lineal, ya que
+                funciona mediante láser. Por tal motivo, está situado en la parte
+                más alta del robot.
+                <br /> <br />
+                Se implementó gracias a ROS y diversas librerías que le dan al robot
+                la capacidad de mapear los obstáculos que están fijos para futuros
+                viajes e identificar aquellos que van surgiendo. De esta forma, el
+                robot se mueve rápidamente y de manera autónoma, con total seguridad.
+              </p>
+            </article>
+            <section class="imagenLidar centrado">
+              <img src="./fotos/lidar.png" alt="Lidar" style="width:442px;height:309px;" />
+            </section>
+        </div>
+      </div>
+      </header>
+
+
+
+      <div class="codigo grid-4 wrapper">
+<!--Parrafo sobre Arduino-->
+        <div class="arduino">
+          <h2>Características del código</h2>
+          <br/ >
+          <article class="justificado">
+            <h3>Arduino</h3>
+            <p>
+              El código del Arduino servirá principalmente para programar el
+              movimiento del robot y su respuesta a inputs.
+              <br/><br/>
+              Su papel en el mismo es de controlar los motores y recibir
+              información desde el joystick o desde la computadora interna.
+              Este código es el puente entre el sistema mecánico y el control.
+            </p>
+            <br/><br/>
+            <h2>Elementos Mecánicos</h2>
+            <br/><br/>
+            <p>
+              Motores de 12 volts y 2 Amperes, cada par conectado a un puente H que
+              les permite girar en cualquiera de los dos sentidos y activar
+              cualquiera de los dos en determinado momento, no es necesario que
+              giren hacia el mismo lado.
+            </p>
+            <br> <br> <br> <br>
+            <p>
+              Llantas de Hule, alto relieve y rodada superior a las del mercado
+              para que pueda circular por los caminos más difíciles.
+            </p>
+          </article>
+        </div>
+        <div class="imagenArduino centrado">
+          <img src="./fotos/arduino.png" alt="Arduino" style="width:350px;height:350px;" />
+          <br> <br>
+          <img src="./fotos/motor.png" alt="Motores" style="width:418.5px;height:123px;" />
+          <br> <br>
+          <img src="./fotos/ruedas.png" alt="Ruedas" style="width:356px;height:280px;" />
+        </div>
+        <div class="imagenPuenteH centrado">
+          <img src="./fotos/puenteh.png" alt="PuenteH" style="width:295px;height:244px;" />
+          <br> <br> <br>
+          <img src="./fotos/fuente.png" alt="Fuente" style="width:373px;height:321px;" />
+        </div>
+        <div class="ROS">
+          <br> <br>
+          <article class="justificado">
+<!--Parrafo sobre ROSS-->
+            <br><br><br>
+            <h3>Ross</h3>
+            <p>
+              Este código representa todo el control para manipular el movimiento
+              autónomo del robot, la detección de obstáculos, el mapeo con uso
+              del Lidar y la comunicación remota (SSH).
+              <br><br>
+              Este lenguaje trabaja en un sistema operativo Linux.
+            </p>
+
+            <br><br><br>
+
+<!--Parrafo sobre elementos internos-->
+            <h2>Elementos Internos</h2>
+            <h3>Arduino</h3>
+            <p>
+              Proceso que manipula los actuadores y que es controlado por medio de
+              la computadora interna del robot.
+            </p>
+            <h3>Computadora Interna</h3>
+            <p>
+              Control del robot y procesador a la computadora remota, en esta
+              se ejecuta el código Ros.
+            </p>
+
+            <h3>Bateria de 12v</h3>
+            <p>
+              Alimenta los motores y puentes H.
+            </p>
+
+            <h3>Fuente de 5v</h3>
+            <p>
+              Alimenta el arduino y el resto del circuito eléctrico.
+            </p>
+          </article>
+          <br><br><br>
+          <img class="alineadoDerecha" src="./fotos/jitomates.png" alt="Jitomates" style="width:350px;height:350px;" />
+        </div>
+      </div>
+  </body>
+</html>

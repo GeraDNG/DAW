@@ -1,0 +1,64 @@
+
+
+body{
+  background: rgb(30,103,42);
+background: -moz-linear-gradient(312deg, rgba(30,103,42,1) 0%, rgba(173,210,191,1) 100%);
+background: -webkit-linear-gradient(312deg, rgba(30,103,42,1) 0%, rgba(173,210,191,1) 100%);
+background: linear-gradient(312deg, rgba(30,103,42,1) 0%, rgba(173,210,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e672a",endColorstr="#add2bf",GradientType=1);
+}
+
+.wrapper { width: 95%; margin: 0px auto; background-color: #FFFFFF;}
+
+
+nav {
+  background-color: #bbcfc5;
+  text-align: center;
+}
+
+header img{
+  width: 6%;
+  height: auto;
+}
+
+h1{
+  position: absolute;
+  top: -5%;
+  left: 34%;
+  font-size: 400%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0% 4%;
+}
+
+li a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+nav li:hover {
+  background-color: #84a594;
+}
+
+.submenu {
+  position: absolute;
+  top: 20%;
+  left: 44%;
+}
+
+.submenu li {
+  display:block;
+  visibility: hidden;
+  background-color: #84a594;
+}
+
+ .menu:hover .submenu li {
+  visibility: visible;
+}
+
+.submenu li :hover {
+  background-color: #add2bf;
+}
