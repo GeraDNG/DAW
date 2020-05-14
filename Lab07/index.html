@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    
+    <!-- Navegación -->
+    <br /> <br />
+    <a href="./mostrarUsuarios.php" class="noUnderLine"> <strong> Ir a lista de usuarios </strong> </a>
+    <br /> <br /> <br /> <br /> <br />
+    <!-- Formulario -->
+    <form class="myForm" id="Lab07-Form" action="./control_formulario.php" method="POST">
+      <!-- Entradas de texto -->
+      <label for="userName"> <strong> Username: </strong> </label>
+      <input type="text" name="userName" id="userName" placeholder="geradng" required autofocus/>
+      <br />
+      <label for="password"> <strong> Password: </strong> </label>
+      <input type="text" name="password" id="password" placeholder="1Aa" required />
+      <br />
+      <label for="nombre"> <strong> Nombre: </strong> </label>
+      <input type="text" name="nombre" id="nombre" placeholder="Gerardo Daniel" required />
+      <br />
+      <label for="apellido"> <strong> Apellido: </strong> </label>
+      <input type="text" name="apellido" id="apellido" placeholder="Naranjo Gallegos" required />
+      <br />
+      <label for="fechaNacimiento"> <strong> Fecha de nacimiento: </strong> </label>
+      <input type="text" name="fechaNacimiento" id="fechaNacimiento" value="DD/MM/AAAA" placeholder="DD/MM/AAAA" required />
+      <br /> <br /> <br />
+      <!-- Botón -->
+      <input type="submit" name="enviar" value="Enviar formulario" />
+      <br /> <br /> <br />
+    </form>
+    <br />
+
+  </body>
+
+</html>

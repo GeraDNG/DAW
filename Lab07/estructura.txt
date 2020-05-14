@@ -1,0 +1,19 @@
+{
+
+  "username1" : {
+    "ID" : "5dc6ef827fc0b",
+    "password" : "1Aa",
+    "nombre" : "Gerardo",
+    "apellido" : "Naranjo",
+    "fechaNacimiento" : "05/01/1996"
+  }
+
+  "username2" : {
+    "ID" : "sfdfsdfsf3242",
+    "password" : "2Bb",
+    "nombre" : "Daniel",
+    "apellido" : "Gallegos",
+    "fechaNacimiento" : "21/07/1998"
+  }
+
+}
